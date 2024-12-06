@@ -1,0 +1,16 @@
+{
+  "name": "abhiyanth-api",
+  "version": "1.0.0",
+  "description": "API to provide information about abhiyanth fest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SRC",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^11.0.2",
+    "firebase-admin": "^13.0.1",
+    "firebase-functions": "^6.1.1"
+  }
+}
