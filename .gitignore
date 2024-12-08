@@ -6,3 +6,4 @@
 /firestore.rules
 /storage.rules
 /.firebaserc
+/.env
