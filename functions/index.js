@@ -17,3 +17,22 @@
 //   logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });
+
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+const cors = require('cors')({ origin: true });
+
+if (!admin.apps.length) {
+  admin.initializeApp();
+}
+
+const db = admin.firestore();
+
+const { registerEvent } = require('./utils/registerevent');
+const { registerUser } = require('./utils/registeruser');
+const { submitVolunteer } = require('./utils/registervolunteer');
+
+// Export functions
+exports.registerEvent = registerEvent;
+exports.registerUser = registerUser;
+exports.submitVolunteer = submitVolunteer;
